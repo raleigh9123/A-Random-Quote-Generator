@@ -15,50 +15,36 @@ const quotes = [
     quote: "You can never understand everything. But, you should push yourself to understand the system.",
     source: "Ryan Dahl",
     citation: "Creator of Node.js",
-    category: "Tech",
-    year: ""
   },
   { 
     quote: "Before software can be reusable it first has to be usable.",
     source: "Ralph Johnson",
     citation: "",
-    category: "Tech",
-    year: ""
   },
   {
     quote: "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
     source: "Martin Fowler",
     citation: "Author of Refactoring",
-    category: "Tech",
-    year: ""
   },
   {
     quote: "... programming requires more concentration than other activities. It's the reason programmers get upset about 'quick interruptions' - such interruptions are tantamount to asking a juggler to keep three balls in the air and hold your groceries at the same time.",
     source: "Steven C. McConnell",
     citation: "Author of Code Complete",
-    category: "Tech",
-    year: ""
   },
   {
     quote: "Why do we never have time to do it right, but always have time to do it over?",
     source: "Anonymous",
     citation: "",
-    category: "Tech",
-    year: ""
   },
   {
     quote: "Simple things should be simple, complex things should be possible.",
     source: "The Wiki Way: Quick Collaboration on the Web",
     citation: "",
-    category: "Tech",
-    year: ""
   },
   {
     quote: "One principle problem of educating software engineers is that they will not use a new method until they believe it works and, more importantly, that they will not believe the method will work until they see it for themselves.",
     source: "Humphrey, W.S.",
     citation: "The Personal Software Process",
-    category: "Tech",
-    year: ""
   }
 ]
 
@@ -106,13 +92,13 @@ function printQuote() {
   let randomQuote = getRandomQuote();
   //Build html content by declaring empty variable and building variable from randomQuote 's content
   let theHTML = '';
-  theHTML += "<p class=\"quote\">" + randomQuote.quote + "</p>";
-  theHTML += "<p class=\"source\">" + randomQuote.source;
+  theHTML += "<p class='quote'>" + randomQuote.quote + "</p>";
+  theHTML += "<p class='source'>" + randomQuote.source;
   if (randomQuote.citation) {
-    theHTML += "<span class=\"citation\">" + randomQuote.citation + "</span>";
+    theHTML += "<span class='citation'>" + randomQuote.citation + "</span>";
   }
   if (randomQuote.year) {
-    theHTML += "<span class=\"citation\">" + randomQuote.year + "</span>";
+    theHTML += "<span class='citation'>" + randomQuote.year + "</span>";
   }
   theHTML += "</p>";
   //Load html into page when function executes
@@ -122,7 +108,7 @@ function printQuote() {
 }
 
 //Change Quote every 7 seconds.
-window.setInterval(printQuote,7000);
+setInterval(printQuote,7000);
 
 /***
   Find element with id="loadQuote" and add an eventlistener.
