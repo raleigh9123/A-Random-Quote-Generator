@@ -27,7 +27,7 @@ body {
 }
 
 .quote {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.1;
   position: relative;
@@ -103,10 +103,10 @@ body {
 
 @media (min-width: 420px) {
   .quote {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .quote:before, .quote:after {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .source {
     font-size: 1.25rem;
