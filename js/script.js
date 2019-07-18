@@ -121,8 +121,8 @@ function printQuote() {
   randomColor();
 }
 
-//Change Quote every 6 seconds.
-window.setInterval(printQuote,6000);
+//Change Quote every 7 seconds.
+window.setInterval(printQuote,7000);
 
 /***
   Find element with id="loadQuote" and add an eventlistener.
